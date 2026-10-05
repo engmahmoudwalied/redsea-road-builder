@@ -40,8 +40,8 @@
 
 :root {
   --radius: 0.875rem;
-  --font-sans: "Cairo", "Segoe UI", system-ui, sans-serif;
-  --font-display: "Cairo", "Segoe UI", system-ui, sans-serif;
+  --font-sans: "Sora", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Sora", "Segoe UI", system-ui, sans-serif;
 
   --background: oklch(0.115 0.014 250);
   --foreground: oklch(0.96 0.008 250);

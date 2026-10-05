@@ -78,20 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "شركة البحر الأحمر للطرق والمقاولات العامة | Red Sea for Roads" },
+      { title: "Red Sea for Roads & General Contracting" },
       {
         name: "description",
         content:
-          "شركة البحر الأحمر للطرق والمقاولات العامة، متخصصة في تنفيذ أعمال الطرق والأسفلت والبنية التحتية والمقاولات العامة.",
+          "Red Sea for Roads & General Contracting — specialized in roads, asphalt, infrastructure, and general contracting with engineering expertise and dependable quality.",
       },
-      {
-        property: "og:title",
-        content: "شركة البحر الأحمر للطرق والمقاولات العامة | Red Sea for Roads",
-      },
+      { property: "og:title", content: "Red Sea for Roads & General Contracting" },
       {
         property: "og:description",
         content:
-          "متخصصون في تنفيذ أعمال الطرق والأسفلت والبنية التحتية والمقاولات العامة، بخبرة هندسية وجودة تعتمد عليها.",
+          "We build roads that last. Roads, asphalt, infrastructure and general contracting — executed with confidence.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -106,7 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap",
       },
     ],
   }),
@@ -118,7 +115,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="en">
       <head>
         <HeadContent />
       </head>
