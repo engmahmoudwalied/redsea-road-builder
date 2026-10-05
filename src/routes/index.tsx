@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Phone, MessageCircle, Globe, MapPin, Facebook } from "lucide-react";
 import { useEffect, useRef } from "react";
 import logoUrl from "@/assets/redsea-logo.png";
+import sunsetRoadUrl from "@/assets/sunset-road.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -219,9 +220,20 @@ function RoadCanvas() {
 function Index() {
   return (
     <div className="relative min-h-screen font-sans">
-      <div className="road-scene" aria-hidden="true">
-        <div className="road-grid" />
-      </div>
+      {/* Sunset road photo background */}
+      <img
+        src={sunsetRoadUrl}
+        alt=""
+        aria-hidden="true"
+        className="fixed inset-0 h-full w-full object-cover"
+        width={1088}
+        height={1920}
+      />
+      {/* Dark overlay for readability */}
+      <div
+        className="fixed inset-0 bg-gradient-to-b from-background/70 via-background/55 to-background/85"
+        aria-hidden="true"
+      />
       <RoadCanvas />
 
       <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col items-center justify-center px-5 py-12">
