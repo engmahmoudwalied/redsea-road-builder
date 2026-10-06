@@ -120,19 +120,19 @@ function Index() {
           </h1>
 
           <p
-            className="animate-fade-up mt-5 text-lg font-semibold text-foreground"
+            className="animate-fade-up mt-4 text-lg font-semibold text-foreground"
             style={{ animationDelay: "0.3s" }}
           >
-            We build roads that last — executed with confidence.
+            We build roads that last.
           </p>
 
           <p
-            className="animate-fade-up mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground"
+            className="animate-fade-up mt-2 max-w-xs text-sm text-muted-foreground"
             style={{ animationDelay: "0.4s" }}
           >
-            Specialized in roads, asphalt, infrastructure, and general
-            contracting — engineering expertise and quality you can rely on.
+            Roads, asphalt, infrastructure &amp; general contracting.
           </p>
+
         </div>
 
         {/* Contact buttons */}
