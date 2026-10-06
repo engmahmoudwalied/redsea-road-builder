@@ -121,7 +121,7 @@ function Index() {
             className="animate-fade-up mt-2 text-sm text-muted-foreground"
             style={{ animationDelay: "0.3s" }}
           >
-            We build roads that last — roads, asphalt &amp; infrastructure.
+            We build roads that last.
           </p>
         </div>
 
