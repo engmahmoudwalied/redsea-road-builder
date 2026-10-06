@@ -136,7 +136,7 @@ function Index() {
         </div>
 
         {/* Contact buttons */}
-        <nav className="mt-9 flex w-full flex-col gap-3" aria-label="Contact">
+        <nav className="mt-8 flex w-full flex-col gap-2.5" aria-label="Contact">
           {CONTACTS.map((c, i) => (
             <a
               key={c.href}

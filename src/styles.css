@@ -330,8 +330,9 @@
 .action-icon {
   display: grid;
   place-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.35rem;
+  height: 2.35rem;
+
   flex-shrink: 0;
   border-radius: var(--radius-lg);
   background: oklch(1 0 0 / 6%);
