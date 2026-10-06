@@ -78,7 +78,7 @@ const FOOTER_LINKS = [
 
 function Index() {
   return (
-    <div className="relative min-h-screen font-sans">
+    <div className="relative h-[100dvh] overflow-hidden font-sans">
       {/* Sunset road photo background */}
       <img
         src={sunsetRoadUrl}
@@ -94,63 +94,53 @@ function Index() {
         aria-hidden="true"
       />
 
-
-      <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col items-center justify-center px-5 py-12">
+      <main className="relative z-10 mx-auto flex h-full w-full max-w-md flex-col items-center justify-center px-5 py-4">
         {/* Hero */}
         <div className="flex flex-col items-center text-center">
-          <div className="logo-glow animate-fade-up">
+          <div className="logo-glow">
             <img
               src={logoUrl}
               alt="Red Sea for Roads & General Contracting logo"
-              className="h-24 w-auto drop-shadow-[0_14px_30px_rgba(0,0,0,0.6)] sm:h-28"
+              className="h-14 w-auto drop-shadow-[0_10px_24px_rgba(0,0,0,0.6)] sm:h-16"
               width={160}
               height={171}
             />
-
           </div>
 
           <h1
-            className="animate-fade-up mt-8 text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl"
+            className="animate-fade-up mt-3 text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl"
             style={{ animationDelay: "0.15s" }}
           >
             Red Sea for Roads
-            <span className="mt-1 block text-lg font-semibold text-muted-foreground sm:text-xl">
+            <span className="mt-0.5 block text-sm font-semibold text-muted-foreground sm:text-base">
               &amp; General Contracting
             </span>
           </h1>
 
           <p
-            className="animate-fade-up mt-4 text-lg font-semibold text-foreground"
+            className="animate-fade-up mt-2 text-sm text-muted-foreground"
             style={{ animationDelay: "0.3s" }}
           >
             We build roads that last.
           </p>
-
-          <p
-            className="animate-fade-up mt-2 max-w-xs text-sm text-muted-foreground"
-            style={{ animationDelay: "0.4s" }}
-          >
-            Roads, asphalt, infrastructure &amp; general contracting.
-          </p>
-
         </div>
 
         {/* Contact buttons */}
-        <nav className="mt-8 flex w-full flex-col gap-2.5" aria-label="Contact">
+        <nav className="mt-5 flex w-full flex-col gap-2" aria-label="Contact">
           {CONTACTS.map((c, i) => (
             <a
               key={c.href}
               href={c.href}
               {...(c.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className={`action-btn animate-fade-up ${c.variant}`}
-              style={{ animationDelay: `${0.5 + i * 0.1}s` }}
+              style={{ animationDelay: `${0.4 + i * 0.08}s` }}
             >
               <span className="action-icon">
-                <c.icon className="h-5 w-5 text-foreground" strokeWidth={1.8} />
+                <c.icon className="h-[18px] w-[18px] text-foreground" strokeWidth={1.8} />
               </span>
               <span className="flex min-w-0 flex-col items-start">
-                <span className="text-base font-semibold leading-tight">{c.label}</span>
-                <span className="truncate text-xs text-muted-foreground">{c.sub}</span>
+                <span className="text-[15px] font-semibold leading-tight">{c.label}</span>
+                <span className="truncate text-[11px] text-muted-foreground">{c.sub}</span>
               </span>
             </a>
           ))}
@@ -158,8 +148,8 @@ function Index() {
 
         {/* Footer */}
         <footer
-          className="animate-fade-up mt-12 flex w-full flex-col items-center gap-4 border-t border-border pt-7 text-center"
-          style={{ animationDelay: "1.1s" }}
+          className="animate-fade-up mt-5 flex w-full flex-col items-center gap-2.5 text-center"
+          style={{ animationDelay: "0.9s" }}
         >
           <div className="flex items-center gap-2">
             {FOOTER_LINKS.map((l) => (
@@ -169,20 +159,15 @@ function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={l.label}
-                className="grid h-9 w-9 place-items-center rounded-full border border-border bg-card/50 text-muted-foreground transition-colors hover:border-foreground/30 hover:text-foreground"
+                className="grid h-8 w-8 place-items-center rounded-full border border-border bg-card/50 text-muted-foreground transition-colors hover:border-foreground/30 hover:text-foreground"
               >
-                <l.icon className="h-4 w-4" strokeWidth={1.8} />
+                <l.icon className="h-3.5 w-3.5" strokeWidth={1.8} />
               </a>
             ))}
           </div>
-          <div className="space-y-1">
-            <p className="text-xs font-medium text-muted-foreground">
-              Red Sea for Roads &amp; General Contracting
-            </p>
-            <p className="text-[11px] text-muted-foreground/70">
-              © 2026 Red Sea for Roads. All Rights Reserved.
-            </p>
-          </div>
+          <p className="text-[10px] text-muted-foreground/70">
+            © 2026 Red Sea for Roads &amp; General Contracting. All Rights Reserved.
+          </p>
         </footer>
       </main>
     </div>
