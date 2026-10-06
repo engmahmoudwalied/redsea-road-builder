@@ -1,14 +1,32 @@
-# Welcome to your Lovable project
+# Red Sea Roads Digital Hub
+
+لوجو الشركة
+
+لينك الفيس :https://www.facebook.com/redsea.roads
+
+لينك الواتساب :
+
++20 10 00597912
+
+لينك الويب سايت :
+
+https://www.redsearoadseg.com/
+
+لينك الموقع الجغرافى :
+
+https://maps.app.goo.gl/K8nTuKfXuivHPV5m6?g_st=ic
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://redsea-road-builder.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/45f48ad4-da38-4389-a1c1-a7ccce646eac).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +38,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
