@@ -93,7 +93,7 @@ function Index() {
         className="fixed inset-0 bg-gradient-to-b from-background/70 via-background/55 to-background/85"
         aria-hidden="true"
       />
-      <RoadCanvas />
+
 
       <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col items-center justify-center px-5 py-12">
         {/* Hero */}
@@ -102,10 +102,11 @@ function Index() {
             <img
               src={logoUrl}
               alt="Red Sea for Roads & General Contracting logo"
-              className="h-36 w-auto drop-shadow-[0_18px_40px_rgba(0,0,0,0.6)] sm:h-40"
+              className="h-24 w-auto drop-shadow-[0_14px_30px_rgba(0,0,0,0.6)] sm:h-28"
               width={160}
               height={171}
             />
+
           </div>
 
           <h1
